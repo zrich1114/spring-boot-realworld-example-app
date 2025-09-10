@@ -5,11 +5,11 @@
   //   "context": ".",
   //   "dockerfile": "Dockerfile"
   // },
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "11"
-    }
-  },
+  // "features": {
+  //   "ghcr.io/devcontainers/features/java:1": {
+  //     "version": "11"
+  //   }
+  // },
   "customizations": {
     "vscode": {
       "extensions": ["vscjava.vscode-java-pack"]
