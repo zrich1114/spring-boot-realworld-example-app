@@ -1,0 +1,32 @@
+tasks:
+  build:
+    name: Build
+    command: |
+      ./gradlew bootRun
+    triggeredBy:
+      - manual
+      - postDevcontainerStart
+
+  test:
+    name: Test
+    command: |
+      ./gradlew test
+    triggeredBy:
+      - manual
+
+  format:
+    name: Format
+    command: |
+      ./gradlew spotlessJavaApply
+    triggeredBy:
+      - manual
+
+services:
+  application:
+    name: Application
+    description: Java Springboot application to service RealWorld Example App
+    commands:
+      start: |
+        ./gradlew bootRun
+    triggeredBy:
+      - postDevcontainerStart
