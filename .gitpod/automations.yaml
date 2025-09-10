@@ -1,14 +1,15 @@
 tasks:
   build:
     name: Build
+    description: Clean build the project and run on port 8080
     command: |
       ./gradlew bootRun
     triggeredBy:
       - manual
-      - postDevcontainerStart
 
   test:
     name: Test
+    description: Run the test suite of the project
     command: |
       ./gradlew test
     triggeredBy:
@@ -16,15 +17,16 @@ tasks:
 
   format:
     name: Format
+    description: Format the Java files in the project
     command: |
       ./gradlew spotlessJavaApply
     triggeredBy:
       - manual
 
 services:
-  application:
-    name: Application
-    description: Java Springboot application to service RealWorld Example App
+  server:
+    name: Server
+    description: Serve the RealWorld Example App on port 8080
     commands:
       start: |
         ./gradlew bootRun
