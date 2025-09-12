@@ -9,13 +9,22 @@
   //   "ghcr.io/devcontainers/features/java:1": {
   //     "version": "none",
   //     "installGradle": "true",
-  //     "installMaven": "true", 
+  //     "installMaven": "true",
   //   }
   // },
   "customizations": {
     "vscode": {
-      "extensions": ["vscjava.vscode-java-pack@0.29.2025081500"]
+      "extensions": ["vscjava.vscode-java-pack@0.29.2025081500"],
+      "settings": {}
     }
   },
-  "forwardPorts": [8080]
+  "remoteUser": "vscode",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "RealWorld",
+      "onAutoForward": "openBrowser",
+      "elevateIfNeeded": true
+    }
+  }
 }
