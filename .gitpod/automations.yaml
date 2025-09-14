@@ -33,5 +33,7 @@ services:
       ready: |
         curl http://localhost:8080/tags -s -f -o /dev/null && \
         gitpod environment port open 8080 --name "RealWorld App"
+      stop: |
+        ./gradlew --stop
     triggeredBy:
       - postDevcontainerStart
