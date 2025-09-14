@@ -35,5 +35,6 @@ services:
         gitpod environment port open 8080 --name "RealWorld App"
       stop: |
         ./gradlew --stop
+        gitpod environment port close 8080
     triggeredBy:
       - postDevcontainerStart
