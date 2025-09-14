@@ -5,13 +5,9 @@
   //   "context": ".",
   //   "dockerfile": "Dockerfile"
   // },
-  // "features": {
-  //   "ghcr.io/devcontainers/features/java:1": {
-  //     "version": "none",
-  //     "installGradle": "true",
-  //     "installMaven": "true",
-  //   }
-  // },
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": ["vscjava.vscode-java-pack@0.29.2025081500"],
