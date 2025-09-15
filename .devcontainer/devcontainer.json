@@ -6,7 +6,8 @@
   //   "dockerfile": "Dockerfile"
   // },
   "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/warrenbuckley/codespace-features/sqlite:latest": {}
   },
   "customizations": {
     "vscode": {

@@ -23,6 +23,14 @@ tasks:
     triggeredBy:
       - manual
 
+  seed-tags:
+    name: Seed Tags
+    description: Seed the database with sample tags
+    command: |
+      ./seed-tags.sh
+    triggeredBy:
+      - manual
+
 services:
   server:
     name: Server
