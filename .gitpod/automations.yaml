@@ -29,6 +29,7 @@ tasks:
     command: |
       ./seed-tags.sh
     triggeredBy:
+      - postDevcontainerStart
       - manual
 
 services:
