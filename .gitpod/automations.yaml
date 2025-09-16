@@ -1,12 +1,4 @@
 tasks:
-  build:
-    name: Build
-    description: Clean build the project and run on port 8080
-    command: |
-      ./gradlew bootRun
-    triggeredBy:
-      - manual
-
   test:
     name: Test
     description: Run the test suite of the project
